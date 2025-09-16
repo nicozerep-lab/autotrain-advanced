@@ -794,3 +794,19 @@ async def stop_training(authenticated: bool = Depends(user_authentication)):
                 logger.info(f"Process {_pid} is already completed. Skipping...")
         return {"success": True}
     return {"success": False}
+
+
+@ui_router.get("/pong", response_class=HTMLResponse)
+async def pong_game(request: Request):
+    """
+    Serve the Pong game
+    """
+    import os
+
+    pong_html_path = os.path.join(BASE_DIR, "static", "pong", "index.html")
+    try:
+        with open(pong_html_path, "r", encoding="utf-8") as f:
+            html_content = f.read()
+        return HTMLResponse(content=html_content)
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Pong game not found")

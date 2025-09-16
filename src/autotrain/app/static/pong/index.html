@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Pong Game</title>
+    <link rel="stylesheet" href="/static/pong/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>Classic Pong</h1>
+            <div class="scoreboard">
+                <div class="score">
+                    <span class="player-label">Player</span>
+                    <span id="player-score">0</span>
+                </div>
+                <div class="score">
+                    <span class="player-label">Computer</span>
+                    <span id="computer-score">0</span>
+                </div>
+            </div>
+        </header>
+        
+        <div class="game-area">
+            <canvas id="pong-canvas" width="800" height="400"></canvas>
+            <div class="game-overlay" id="game-overlay">
+                <div class="start-message">
+                    <h2>Press SPACE to Start</h2>
+                    <p>Use mouse or arrow keys to control your paddle</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls-info">
+            <div class="control">
+                <span class="control-key">Mouse</span>
+                <span class="control-desc">Move paddle up/down</span>
+            </div>
+            <div class="control">
+                <span class="control-key">↑ ↓</span>
+                <span class="control-desc">Arrow keys for paddle control</span>
+            </div>
+            <div class="control">
+                <span class="control-key">SPACE</span>
+                <span class="control-desc">Start/Restart game</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/pong/game.js"></script>
+</body>
+</html>
