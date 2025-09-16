@@ -1,0 +1,126 @@
+# ¿Qué puede hacer AutoTrain Advanced?
+
+AutoTrain Advanced es una plataforma sin código desarrollada por Hugging Face que simplifica el proceso de entrenamiento de modelos de última generación en múltiples dominios: Procesamiento de Lenguaje Natural (NLP), Visión por Computadora (CV) y análisis de Datos Tabulares.
+
+## Tareas Soportadas
+
+### 🤖 Ajuste Fino de Modelos de Lenguaje Grande (LLM)
+
+AutoTrain permite entrenar y personalizar modelos de lenguaje para diversas aplicaciones:
+
+- **LLM SFT (Supervised Fine-Tuning)**: Ajuste fino supervisado para tareas específicas
+- **LLM ORPO**: Optimización de preferencias de ranking directo 
+- **LLM Generic/Default**: Entrenamiento genérico de modelos de lenguaje
+- **LLM DPO (Direct Preference Optimization)**: Optimización directa de preferencias
+- **LLM Reward**: Entrenamiento de modelos de recompensa
+
+### 🎨 Modelos de Visión-Lenguaje (VLM)
+
+Capacidades para combinar comprensión visual y textual:
+
+- **VLM Captioning**: Generación automática de descripciones de imágenes
+- **VLM VQA (Visual Question Answering)**: Respuesta a preguntas sobre imágenes
+
+### 📝 Transformadores de Oraciones (Sentence Transformers)
+
+Entrenamiento especializado para tareas de embeddings:
+
+- **ST Pair**: Comparación de pares de oraciones
+- **ST Pair Classification**: Clasificación de pares de oraciones
+- **ST Pair Scoring**: Puntuación de similitud entre oraciones
+- **ST Triplet**: Entrenamiento con tripletas
+- **ST Question Answering**: Búsqueda semántica para preguntas y respuestas
+
+### 🔤 Otras Tareas de Texto
+
+Amplia gama de capacidades de procesamiento de texto:
+
+- **Text Classification**: Clasificación de documentos y textos
+- **Text Regression**: Regresión para predicciones numéricas en texto
+- **Extractive Question Answering**: Extracción de respuestas de contextos
+- **Sequence to Sequence**: Traducción, resumen y generación de texto
+- **Token Classification**: Reconocimiento de entidades nombradas y etiquetado POS
+
+### 🖼️ Tareas de Visión por Computadora
+
+Procesamiento y análisis de imágenes:
+
+- **Image Classification**: Clasificación de imágenes en categorías
+- **Image Scoring/Regression**: Puntuación y regresión en imágenes
+- **Object Detection**: Detección y localización de objetos
+
+### 📊 Datos Tabulares
+
+Análisis de datos estructurados:
+
+- **Tabular Classification**: Clasificación en datos tabulares
+- **Tabular Regression**: Regresión en datos tabulares
+
+## ¿Cómo usar AutoTrain?
+
+AutoTrain ofrece múltiples formas de uso:
+
+### 🌐 Interfaz Web (Sin Código)
+- Accede a través de Hugging Face Spaces
+- Interfaz intuitiva de arrastrar y soltar
+- No requiere conocimientos de programación
+
+### 💻 Instalación Local
+```bash
+pip install autotrain-advanced
+autotrain app --port 8080 --host 127.0.0.1
+```
+
+### ⚙️ Línea de Comandos (CLI)
+```bash
+# Ver todas las opciones disponibles
+autotrain --help
+
+# Usar archivo de configuración
+autotrain --config path/to/config.yaml
+
+# Comandos específicos por tarea
+autotrain llm --help
+autotrain text-classification --help
+autotrain image-classification --help
+```
+
+### 🐍 API de Python
+Integra AutoTrain directamente en tus proyectos de Python para automatización completa.
+
+## Recursos de Hardware Soportados
+
+AutoTrain puede ejecutarse en:
+
+- **Local/Espacios**: Tu hardware local o Hugging Face Spaces
+- **GPU en la Nube**: A10G, L40S, A100, H100
+- **CPU**: Para tareas menos intensivas
+- **NVIDIA DGX Cloud**: Para entrenamientos de alta escala
+
+## ¿Quién debería usar AutoTrain?
+
+AutoTrain es perfecto para:
+
+- **Profesionales de Negocios**: Que necesitan modelos de IA sin conocimientos técnicos
+- **Investigadores**: Que quieren prototipos rápidos de modelos
+- **Educadores**: Para enseñar conceptos de machine learning
+- **Desarrolladores**: Que buscan integrar IA en sus aplicaciones
+- **Entusiastas**: Que quieren experimentar con modelos de última generación
+
+## Ventajas Clave
+
+- ✅ **Sin Código**: Interfaz intuitiva para todos los niveles
+- ✅ **Múltiples Dominios**: NLP, CV y datos tabulares
+- ✅ **Modelos SOTA**: Acceso a los mejores modelos disponibles
+- ✅ **Flexibilidad**: Local, nube o híbrido
+- ✅ **Integración HF**: Conectado al ecosistema Hugging Face
+- ✅ **Configuración Automática**: Optimización automática de hiperparámetros
+
+## Comenzar Ahora
+
+1. **Visita**: [Hugging Face AutoTrain Space](https://huggingface.co/spaces/autotrain-projects/autotrain-advanced)
+2. **Instala**: `pip install autotrain-advanced`
+3. **Explora**: Los ejemplos en la documentación
+4. **Entrena**: Tu primer modelo en minutos
+
+AutoTrain democratiza el machine learning, haciendo que la tecnología de IA de vanguardia sea accesible para todos, independientemente de su experiencia técnica.
