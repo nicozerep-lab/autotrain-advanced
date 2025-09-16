@@ -144,37 +144,37 @@ For uploaded datasets, leave column mapping as it is.
 
 # Sentence Transformers
 
-For all sentence transformers tasks, one needs to map columns to `sentence1_column`, `sentence2_column`, `sentence3_column` & `target_column` column.
+For all sentence transformers tasks, one needs to map columns to `sentence1`, `sentence2`, `sentence3` & `target` column.
 Not all columns need to be mapped for all trainers of sentence transformers.
 
 ## `pair`:
 
 ```
-{"sentence1_column": "anchor", "sentence2_column": "positive"}
+{"sentence1": "anchor", "sentence2": "positive"}
 ```
 
 ## `pair_class`:
 
 ```
-{"sentence1_column": "premise", "sentence2_column": "hypothesis", "target_column": "label"}
+{"sentence1": "premise", "sentence2": "hypothesis", "target": "label"}
 ```
 
 ## `pair_score`:
 
 ```
-{"sentence1_column": "sentence1", "sentence2_column": "sentence2", "target_column": "score"}
+{"sentence1": "sentence1", "sentence2": "sentence2", "target": "score"}
 ```
 
 ## `triplet`:
 
 ```
-{"sentence1_column": "anchor", "sentence2_column": "positive", "sentence3_column": "negative"}
+{"sentence1": "anchor", "sentence2": "positive", "sentence3": "negative"}
 ```
 
 ## `qa`:
 
 ```
-{"sentence1_column": "query", "sentence2_column": "answer"}
+{"sentence1": "query", "sentence2": "answer"}
 ```
 
 
